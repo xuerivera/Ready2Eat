@@ -1,0 +1,91 @@
+---
+
+---
+
+<section id="precios" class="mx-auto my-12 px-4 container">
+    <div class="overflow-x-auto">
+        <table class="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
+            <thead class="bg-green-500 text-white">
+                <tr>
+                    <th class="py-4 px-6 text-left">Plan</th>
+                    <th class="py-4 px-6 text-left">Descripción</th>
+                    <th class="py-4 px-6 text-left">Precio</th>
+                    <th class="py-4 px-6 text-left">Ideal para</th>
+                    <th class="py-4 px-6 text-left"></th>
+                </tr>
+            </thead>
+            <tbody class="text-gray-700">
+                <tr class="border-b">
+                    <td class="py-4 px-6 font-bold text-left">Plan Estándar</td>
+                    <td class="py-4 px-6 text-justify">Ideal para individuos o parejas. Incluye 10 platillos a la semana.</td>
+                    <td class="py-4 px-6 text-left">$50/semana</td>
+                    <td class="py-4 px-6 text-left">1-2 personas</td>
+                    <td class="py-4 px-6 text-left">
+                        <a href="#plans" class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded transition ease-in duration-200 inline-block text-center">Elegir este plan</a>
+                    </td>
+                </tr>
+                <tr class="border-b bg-gray-100">
+                    <td class="py-4 px-6 font-bold text-left">Plan Premium</td>
+                    <td class="py-4 px-6 text-justify">Para aquellos que buscan resultados y variedad. Incluye 15 platillos a la semana.</td>
+                    <td class="py-4 px-6 text-left">$75/semana</td>
+                    <td class="py-4 px-6 text-left">2-3 personas</td>
+                    <td class="py-4 px-6 text-left">
+                        <a href="#plans" class="bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded transition ease-in duration-200 inline-block text-center">Elegir este plan</a>
+                    </td>
+                </tr>
+                <tr class="border-b">
+                    <td class="py-4 px-6 font-bold text-left">Plan Familiar</td>
+                    <td class="py-4 px-6 text-justify">Diseñado para toda la familia. Incluye 20 platillos a la semana.</td>
+                    <td class="py-4 px-6 text-left">$100/semana</td>
+                    <td class="py-4 px-6 text-left">4-5 personas</td>
+                    <td class="py-4 px-6 text-left">
+                        <a href="#plans" class="bg-yellow-500 hover:bg-yellow-700 text-white py-2 px-4 rounded transition ease-in duration-200 inline-block text-center">Elegir este plan</a>
+                    </td>
+                </tr>
+                <tr class="bg-gray-100">
+                    <td class="py-4 px-6 font-bold text-left">Plan para Niños</td>
+                    <td class="py-4 px-6 text-justify">Especialmente diseñado para los más pequeños. Incluye 10 platillos nutritivos por semana.</td>
+                    <td class="py-4 px-6 text-left">$30/semana</td>
+                    <td class="py-4 px-6 text-left">Menores de 12 años</td>
+                    <td class="py-4 px-6 text-left">
+                        <a href="#plans" class="bg-purple-500 hover:bg-purple-700 text-white py-2 px-4 rounded transition ease-in duration-200 inline-block text-center">Elegir este plan</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<style>
+    @media (max-width: 768px) {
+        table, thead, tbody, th, td, tr {
+            display: block;
+        }
+
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        tr {
+            margin-bottom: 15px;
+        }
+
+        td {
+            border: none;
+            position: relative;
+            padding-left: 50%;
+            text-align: left;
+        }
+
+        td:before {
+            content: attr(data-label);
+            position: absolute;
+            left: 10px;
+            width: calc(50% - 20px);
+            text-align: left;
+            font-weight: bold;
+        }
+    }
+</style>

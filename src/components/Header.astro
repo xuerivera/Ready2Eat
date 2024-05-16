@@ -1,12 +1,21 @@
 ---
 
-
 ---
+
 <header class="text-center py-12 bg-green-500 text-white">
-    <img src="./assets/logo-nutriplan.svg" alt="Logotipo de NutriPlan" class="mx-auto">
-    <div class="mt-8 px-5">
-        <h1 class="text-4xl font-bold">Encuentra el equilibrio perfecto para tu nutrición.</h1>
-        <p class="mt-4 text-xl">NutriPlan te guía en tu camino hacia un estilo de vida más saludable.</p>
-        <a href="#plans" class="mt-8 inline-block bg-green-700 text-white py-2 px-6 rounded-full hover:bg-green-800 transition duration-200">Explora nuestros planes</a>
+    <div class="flex flex-col items-center">
+        <div class="px-5">
+            <h1 class="text-4xl font-bold">Encuentra el equilibrio perfecto para tu nutrición.</h1>
+            <p class="mt-4 text-xl">NutriPlan te guía en tu camino hacia un estilo de vida más saludable.</p>
+        </div>
     </div>
+    <a href="#precios" id="btnPrecio" class="mt-8 inline-block bg-green-700 text-white py-2 px-6 rounded-full hover:bg-green-800 transition duration-200">Precios</a>
 </header>
+
+<style>
+    #btnPrecio {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+        position: absolute;
+        left: calc(50% - 50px);
+    }
+</style>

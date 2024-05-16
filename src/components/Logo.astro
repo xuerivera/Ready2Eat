@@ -1,0 +1,17 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/Ready2Eat.png";
+---
+
+<div class="text-center py-4 bg-green-500 h-24">
+    <Image src={logo} alt="Logotipo de NutriPlan" class="mx-auto w-36" id="logo">
+</div>
+
+<style>
+    #logo {
+        width: 150px;
+        height: auto; /* Maintain aspect ratio */
+        position: absolute;
+        left: calc(50% - 75px);
+    }
+</style>
