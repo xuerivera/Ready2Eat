@@ -10,12 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3  # Update to use Node.js 20
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3  # Update to use Node.js 20
         with:
-          node-version: '18.14.1'  # Ensure Node.js version is correct
+          node-version: '20'  # Ensure Node.js version is 20
 
       - name: Install dependencies
         run: npm install
